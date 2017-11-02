@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UploadVideoAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-9G-yYD" userLabel="itmsView">
+                    <rect key="frame" x="225" y="255" width="150" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLn-aL-Al8">
+                            <rect key="frame" x="14" y="1" width="136" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="IFp-KJ-mag"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title=" 从手机相册选择" image="上传相机-icon.png">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G0-nc-zEg">
+                            <rect key="frame" x="14" y="46" width="136" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Kd1-WD-p3e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title=" 从个人主页选择" image="上传影带-icon.png">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdI-Lg-tMb" userLabel="sepr">
+                            <rect key="frame" x="0.0" y="45" width="150" height="1"/>
+                            <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Yhb-Rl-zlc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IdI-Lg-tMb" firstAttribute="leading" secondItem="Mmo-9G-yYD" secondAttribute="leading" id="5N8-VK-uzD"/>
+                        <constraint firstAttribute="bottom" secondItem="4G0-nc-zEg" secondAttribute="bottom" id="5rT-Nk-J8g"/>
+                        <constraint firstItem="IdI-Lg-tMb" firstAttribute="centerY" secondItem="Mmo-9G-yYD" secondAttribute="centerY" id="6u5-5Y-3u5"/>
+                        <constraint firstItem="4G0-nc-zEg" firstAttribute="leading" secondItem="Mmo-9G-yYD" secondAttribute="leading" constant="14" id="Ayt-XU-Gbh"/>
+                        <constraint firstItem="lLn-aL-Al8" firstAttribute="leading" secondItem="Mmo-9G-yYD" secondAttribute="leading" constant="14" id="DQx-fL-fmN"/>
+                        <constraint firstAttribute="width" secondItem="Mmo-9G-yYD" secondAttribute="height" multiplier="1:1" id="EmH-tq-Rsx"/>
+                        <constraint firstItem="4G0-nc-zEg" firstAttribute="top" secondItem="lLn-aL-Al8" secondAttribute="bottom" constant="1" id="US8-iU-cYF"/>
+                        <constraint firstAttribute="trailing" secondItem="lLn-aL-Al8" secondAttribute="trailing" id="WJb-42-gtj"/>
+                        <constraint firstAttribute="height" constant="90" id="b0U-v7-lLq"/>
+                        <constraint firstAttribute="trailing" secondItem="IdI-Lg-tMb" secondAttribute="trailing" id="nPi-mG-8ZI"/>
+                        <constraint firstAttribute="trailing" secondItem="4G0-nc-zEg" secondAttribute="trailing" id="pye-iF-ITM"/>
+                        <constraint firstAttribute="width" constant="150" id="xID-T6-bbR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EmH-tq-Rsx"/>
+                        </mask>
+                    </variation>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="上传弹窗逗.png" translatesAutoresizingMaskIntoConstraints="NO" id="wKo-tG-g0W">
+                    <rect key="frame" x="250" y="200" width="100" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="i4Z-69-8BG"/>
+                        <constraint firstAttribute="width" constant="100" id="nx9-6h-TKH"/>
+                        <constraint firstAttribute="width" secondItem="wKo-tG-g0W" secondAttribute="height" multiplier="13:7" id="t4X-Cl-pb3"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="t4X-Cl-pb3"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mmo-9G-yYD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4FB-1e-BeL"/>
+                <constraint firstItem="Mmo-9G-yYD" firstAttribute="top" secondItem="wKo-tG-g0W" secondAttribute="bottom" constant="-4" id="5D0-Rg-J0M"/>
+                <constraint firstItem="Mmo-9G-yYD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Aff-wY-JYk"/>
+                <constraint firstItem="wKo-tG-g0W" firstAttribute="centerX" secondItem="Mmo-9G-yYD" secondAttribute="centerX" id="F0l-sz-fY9"/>
+                <constraint firstItem="Mmo-9G-yYD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="mxg-Hf-Opl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="mxg-Hf-Opl"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="selecteFromPersonalPage" destination="4G0-nc-zEg" id="CfD-Rk-n8y"/>
+                <outlet property="selecteFromPhotos" destination="lLn-aL-Al8" id="wKo-2c-7Lr"/>
+            </connections>
+            <point key="canvasLocation" x="622" y="495"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="上传弹窗逗.png" width="54" height="59"/>
+        <image name="上传影带-icon.png" width="15" height="15"/>
+        <image name="上传相机-icon.png" width="15" height="15"/>
+    </resources>
+</document>

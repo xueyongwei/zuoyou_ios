@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SetNormalTableViewCell" id="KGk-i7-Jjw" customClass="SetNormalTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="意见反馈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJh-WL-0LK">
+                        <rect key="frame" x="13" y="11" width="276" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4NB-ka-6Jc"/>
+                            <constraint firstAttribute="width" constant="80" id="Izi-Nn-48u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Izi-Nn-48u"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightMore.png" translatesAutoresizingMaskIntoConstraints="NO" id="K9V-PW-Th7">
+                        <rect key="frame" x="299" y="14" width="8" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="85E-ml-LCU"/>
+                            <constraint firstAttribute="height" constant="15" id="BIN-aL-keU"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPM-EP-IF7" userLabel="fenge">
+                        <rect key="frame" x="8" y="0.0" width="312" height="1"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="sNT-8B-Y11"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OPM-EP-IF7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4ch-Fq-Hnw"/>
+                    <constraint firstItem="K9V-PW-Th7" firstAttribute="leading" secondItem="OPM-EP-IF7" secondAttribute="trailing" id="MqU-8h-5c3"/>
+                    <constraint firstItem="OPM-EP-IF7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Pmg-wC-s5K"/>
+                    <constraint firstAttribute="trailing" secondItem="K9V-PW-Th7" secondAttribute="trailing" constant="13" id="Qeo-cI-DdL"/>
+                    <constraint firstItem="NJh-WL-0LK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uhm-3S-WvZ"/>
+                    <constraint firstItem="K9V-PW-Th7" firstAttribute="leading" secondItem="NJh-WL-0LK" secondAttribute="trailing" constant="10" id="bKu-a4-dEc"/>
+                    <constraint firstAttribute="trailing" secondItem="OPM-EP-IF7" secondAttribute="trailing" id="n9S-TK-KN6"/>
+                    <constraint firstItem="NJh-WL-0LK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="qOZ-eP-t1I"/>
+                    <constraint firstItem="K9V-PW-Th7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sc7-Nq-7eM"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="MqU-8h-5c3"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fengeConst" destination="sNT-8B-Y11" id="x4b-fc-VX8"/>
+                <outlet property="nameLabel" destination="NJh-WL-0LK" id="Z2h-LK-zOc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightMore.png" width="8" height="15"/>
+    </resources>
+</document>

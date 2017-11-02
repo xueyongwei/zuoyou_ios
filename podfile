@@ -1,0 +1,9 @@
+platform :ios, ‘7.0’
+pod 'PPNetworkHelper',:git => 'https://github.com/jkpang/PPNetworkHelper.git'
+pod 'SDWebImage', '~>3.7'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'Masonry'
+pod 'SSZipArchive'
+pod 'Google/Analytics'
+pod "Qiniu", "~> 7.1"

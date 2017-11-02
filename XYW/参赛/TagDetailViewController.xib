@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TagDetailViewController">
+            <connections>
+                <outlet property="tableView" destination="g6Q-CP-XhQ" id="gWr-kV-SH0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6Q-CP-XhQ" customClass="SimultaneouslyGestureRecognizerTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOm-bE-R5y">
+                    <rect key="frame" x="147" y="573" width="81" height="81"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IOm-bE-R5y" secondAttribute="height" multiplier="1:1" id="WxK-G7-X03"/>
+                        <constraint firstAttribute="width" constant="81" id="oOn-lT-GuE"/>
+                    </constraints>
+                    <state key="normal" image="tagDetail上传.png"/>
+                    <connections>
+                        <action selector="onUploadVideoClick:" destination="-1" eventType="touchUpInside" id="r8w-Fr-t2w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IOm-bE-R5y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="19t-Gk-JQ2"/>
+                <constraint firstAttribute="trailing" secondItem="g6Q-CP-XhQ" secondAttribute="trailing" id="FQd-3n-Cdh"/>
+                <constraint firstItem="g6Q-CP-XhQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ot4-ka-q35"/>
+                <constraint firstItem="g6Q-CP-XhQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rae-rd-mGQ"/>
+                <constraint firstAttribute="bottom" secondItem="IOm-bE-R5y" secondAttribute="bottom" constant="13" id="jjF-bb-ZJZ"/>
+                <constraint firstAttribute="bottom" secondItem="g6Q-CP-XhQ" secondAttribute="bottom" id="rbb-Dk-6pR"/>
+            </constraints>
+            <point key="canvasLocation" x="480" y="290"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tagDetail上传.png" width="81" height="81"/>
+    </resources>
+</document>

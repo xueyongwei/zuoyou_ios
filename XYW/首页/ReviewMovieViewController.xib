@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewMovieViewController">
+            <connections>
+                <outlet property="collectionView" destination="dSD-V6-lro" id="7X5-1x-bnB"/>
+                <outlet property="playerView" destination="Dxm-qP-Bu8" id="pSD-eO-Gg3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxm-qP-Bu8" customClass="ZYPlayerView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Dxm-qP-Bu8" secondAttribute="height" multiplier="1:1" id="f92-hp-Lse"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WH6-cs-xW1">
+                    <rect key="frame" x="0.0" y="376" width="375" height="291"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dSD-V6-lro">
+                            <rect key="frame" x="0.0" y="100.5" width="375" height="90"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="90" id="HPB-zP-KFh"/>
+                            </constraints>
+                            <collectionViewLayout key="collectionViewLayout" id="lvv-my-rgo" customClass="ZYHonCommonLayout"/>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dSD-V6-lro" secondAttribute="trailing" id="UpF-iH-oVE"/>
+                        <constraint firstItem="dSD-V6-lro" firstAttribute="centerY" secondItem="WH6-cs-xW1" secondAttribute="centerY" id="aez-sY-2OK"/>
+                        <constraint firstItem="dSD-V6-lro" firstAttribute="leading" secondItem="WH6-cs-xW1" secondAttribute="leading" id="c3B-c5-Ith"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WH6-cs-xW1" firstAttribute="top" secondItem="Dxm-qP-Bu8" secondAttribute="bottom" constant="1" id="FMy-0W-vQQ"/>
+                <constraint firstAttribute="trailing" secondItem="Dxm-qP-Bu8" secondAttribute="trailing" id="NJ3-DK-90c"/>
+                <constraint firstItem="Dxm-qP-Bu8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RCx-e6-yNf"/>
+                <constraint firstAttribute="trailing" secondItem="WH6-cs-xW1" secondAttribute="trailing" id="a7C-de-yTr"/>
+                <constraint firstItem="Dxm-qP-Bu8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gzz-kf-ald"/>
+                <constraint firstAttribute="bottom" secondItem="WH6-cs-xW1" secondAttribute="bottom" id="ii8-x5-eVu"/>
+                <constraint firstItem="WH6-cs-xW1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nMs-Mj-JEN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

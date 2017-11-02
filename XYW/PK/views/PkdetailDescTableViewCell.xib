@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PkdetailDescTableViewCell" rowHeight="87" id="KGk-i7-Jjw" customClass="PkdetailDescTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZU-vL-gMb" userLabel="xianVIew">
+                        <rect key="frame" x="8" y="8" width="304" height="70.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-1S-sVb" userLabel="spaceView">
+                                <rect key="frame" x="1" y="1" width="302" height="68.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="up主什么也没说～" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tl-1C-Pix">
+                                        <rect key="frame" x="10" y="8" width="282" height="52.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3tl-1C-Pix" secondAttribute="trailing" constant="10" id="W1f-mf-c5P"/>
+                                    <constraint firstItem="3tl-1C-Pix" firstAttribute="top" secondItem="PSC-1S-sVb" secondAttribute="top" constant="8" id="cGR-Pc-QG7"/>
+                                    <constraint firstAttribute="bottom" secondItem="3tl-1C-Pix" secondAttribute="bottom" constant="8" id="dWZ-7D-BiY"/>
+                                    <constraint firstItem="3tl-1C-Pix" firstAttribute="leading" secondItem="PSC-1S-sVb" secondAttribute="leading" constant="10" id="iy4-Yg-zql"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PSC-1S-sVb" secondAttribute="bottom" constant="1" id="4M7-dH-s4f"/>
+                            <constraint firstItem="PSC-1S-sVb" firstAttribute="leading" secondItem="OZU-vL-gMb" secondAttribute="leading" constant="1" id="Iot-eV-l70"/>
+                            <constraint firstItem="PSC-1S-sVb" firstAttribute="top" secondItem="OZU-vL-gMb" secondAttribute="top" constant="1" id="XOa-wn-Pci"/>
+                            <constraint firstAttribute="trailing" secondItem="PSC-1S-sVb" secondAttribute="trailing" constant="1" id="vSB-lN-GUd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="描述框-红.png" translatesAutoresizingMaskIntoConstraints="NO" id="5vG-sx-MfM">
+                        <rect key="frame" x="19" y="4" width="13" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="5fA-eB-F3X"/>
+                            <constraint firstAttribute="height" constant="5" id="GLe-6H-Mr1"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="描述框-蓝.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cdk-l3-1Fy">
+                        <rect key="frame" x="288" y="4" width="13" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="HAh-q5-PMv"/>
+                            <constraint firstAttribute="height" constant="5" id="KTm-HU-O7p"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OZU-vL-gMb" firstAttribute="top" secondItem="5vG-sx-MfM" secondAttribute="bottom" constant="-1" id="3QB-XF-MB0"/>
+                    <constraint firstItem="OZU-vL-gMb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4Ex-b5-J2g"/>
+                    <constraint firstItem="OZU-vL-gMb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="CQK-6M-soG"/>
+                    <constraint firstItem="Cdk-l3-1Fy" firstAttribute="centerY" secondItem="5vG-sx-MfM" secondAttribute="centerY" id="D9n-ia-1F0"/>
+                    <constraint firstItem="5vG-sx-MfM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="PMA-hN-5lY"/>
+                    <constraint firstAttribute="trailing" secondItem="OZU-vL-gMb" secondAttribute="trailing" constant="8" id="aFQ-bi-xHJ"/>
+                    <constraint firstAttribute="bottom" secondItem="OZU-vL-gMb" secondAttribute="bottom" constant="8" id="hnU-Uh-KHj"/>
+                    <constraint firstAttribute="trailing" secondItem="Cdk-l3-1Fy" secondAttribute="trailing" constant="19" id="q2U-Kz-gmu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BO" destination="4M7-dH-s4f" id="XSj-Oq-68g"/>
+                <outlet property="LE" destination="Iot-eV-l70" id="eqB-Zp-eY0"/>
+                <outlet property="TO" destination="XOa-wn-Pci" id="M6c-9N-pqJ"/>
+                <outlet property="TR" destination="vSB-lN-GUd" id="gtN-g6-tEI"/>
+                <outlet property="descLabel" destination="3tl-1C-Pix" id="3g3-cS-RqL"/>
+                <outlet property="leftWho" destination="5vG-sx-MfM" id="PpK-v5-vbJ"/>
+                <outlet property="rightWho" destination="Cdk-l3-1Fy" id="fRN-vj-u1d"/>
+                <outlet property="xianView" destination="OZU-vL-gMb" id="0iV-qZ-Vh6"/>
+            </connections>
+            <point key="canvasLocation" x="404" y="485.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="描述框-红.png" width="17" height="6"/>
+        <image name="描述框-蓝.png" width="17" height="6"/>
+    </resources>
+</document>

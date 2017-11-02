@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Bangdan3TableViewCell" rowHeight="213" id="KGk-i7-Jjw" customClass="Bangdan3TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="榜单头像3.png" translatesAutoresizingMaskIntoConstraints="NO" id="EyQ-1e-wZe" userLabel="蒙板">
+                        <rect key="frame" x="112.5" y="8" width="95" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="ah9-4y-u4E"/>
+                            <constraint firstAttribute="height" constant="48" id="tV5-9z-wfK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQA-EZ-Moc">
+                        <rect key="frame" x="20" y="61" width="280" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="i6X-cm-WZc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-Tp-ja7" userLabel="头像">
+                        <rect key="frame" x="137.5" y="9" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="GKZ-4R-iWb"/>
+                            <constraint firstAttribute="width" secondItem="K7a-Tp-ja7" secondAttribute="height" multiplier="1:1" id="MfB-BP-gmL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="23"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dua-Nd-4p2">
+                        <rect key="frame" x="8" y="130.5" width="312" height="1"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="U8b-fC-5OK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收到0金豆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elG-wI-RTY">
+                        <rect key="frame" x="20" y="81" width="280" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="榜单角标3.png" translatesAutoresizingMaskIntoConstraints="NO" id="gEs-Vs-Lnb">
+                        <rect key="frame" x="0.0" y="15" width="35" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="G8g-Ng-UFe"/>
+                            <constraint firstAttribute="height" constant="20" id="whl-bC-DYD"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vh-vC-OoU">
+                        <rect key="frame" x="127.5" y="101" width="65" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="qu7-MS-o42"/>
+                            <constraint firstAttribute="width" constant="65" id="yJg-ex-3nf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="关注">
+                            <color key="titleColor" red="1" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onGuanzhuClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CUR-TY-Ndp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dua-Nd-4p2" secondAttribute="trailing" id="0jD-QV-k6p"/>
+                    <constraint firstItem="K7a-Tp-ja7" firstAttribute="width" secondItem="K7a-Tp-ja7" secondAttribute="height" multiplier="1:1" id="17F-Ur-RGQ"/>
+                    <constraint firstItem="elG-wI-RTY" firstAttribute="width" secondItem="zQA-EZ-Moc" secondAttribute="width" id="7p9-oH-Pbq"/>
+                    <constraint firstItem="gEs-Vs-Lnb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Cs-I6-HbD"/>
+                    <constraint firstItem="elG-wI-RTY" firstAttribute="centerX" secondItem="zQA-EZ-Moc" secondAttribute="centerX" id="CNr-vZ-y0i"/>
+                    <constraint firstItem="K7a-Tp-ja7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="HKZ-jV-Ksn"/>
+                    <constraint firstItem="gEs-Vs-Lnb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="HwQ-YA-JDD"/>
+                    <constraint firstAttribute="trailing" secondItem="zQA-EZ-Moc" secondAttribute="trailing" constant="20" id="IGE-nX-5dK"/>
+                    <constraint firstItem="zQA-EZ-Moc" firstAttribute="top" secondItem="EyQ-1e-wZe" secondAttribute="bottom" constant="5" id="KdC-SA-JsL"/>
+                    <constraint firstItem="2vh-vC-OoU" firstAttribute="top" secondItem="elG-wI-RTY" secondAttribute="bottom" constant="5" id="Mh4-2y-uPe"/>
+                    <constraint firstItem="2vh-vC-OoU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="QNw-aA-StQ"/>
+                    <constraint firstItem="elG-wI-RTY" firstAttribute="top" secondItem="zQA-EZ-Moc" secondAttribute="bottom" constant="5" id="U2b-BZ-IrH"/>
+                    <constraint firstItem="elG-wI-RTY" firstAttribute="height" secondItem="zQA-EZ-Moc" secondAttribute="height" id="dHp-xT-Tvi"/>
+                    <constraint firstItem="K7a-Tp-ja7" firstAttribute="centerX" secondItem="EyQ-1e-wZe" secondAttribute="centerX" id="eek-8v-KHB"/>
+                    <constraint firstItem="dua-Nd-4p2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="epV-ur-NO2"/>
+                    <constraint firstItem="EyQ-1e-wZe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gb6-e1-Wwv"/>
+                    <constraint firstAttribute="bottom" secondItem="dua-Nd-4p2" secondAttribute="bottom" id="haI-qq-fey"/>
+                    <constraint firstItem="zQA-EZ-Moc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mod-4d-IWr"/>
+                    <constraint firstItem="EyQ-1e-wZe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="y1V-Th-s22"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="beansLabel" destination="elG-wI-RTY" id="g2I-Dg-0o0"/>
+                <outlet property="fengeLabelH" destination="U8b-fC-5OK" id="EYN-ec-lP1"/>
+                <outlet property="guanzhuBtn" destination="2vh-vC-OoU" id="snx-6H-6fY"/>
+                <outlet property="iconImgV" destination="K7a-Tp-ja7" id="igf-dh-JSg"/>
+                <outlet property="userNameLabel" destination="zQA-EZ-Moc" id="HAL-Xj-sLb"/>
+            </connections>
+            <point key="canvasLocation" x="563" y="370"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1.png" width="260" height="260"/>
+        <image name="榜单头像3.png" width="95" height="46"/>
+        <image name="榜单角标3.png" width="35" height="20"/>
+    </resources>
+</document>

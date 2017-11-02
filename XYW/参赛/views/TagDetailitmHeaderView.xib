@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TagDetailViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrA-30-iCA" userLabel="tagsView" customClass="TagDetailitmHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQh-I5-f2Q">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="热战区">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onTagIemCLick:" destination="-1" eventType="touchUpInside" id="eOt-Bc-LQ0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-m2-z6k">
+                    <rect key="frame" x="250" y="0.0" width="125" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="已结束">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onTagIemCLick:" destination="-1" eventType="touchUpInside" id="slU-Uu-ZYO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZi-CG-Thd">
+                    <rect key="frame" x="125" y="0.0" width="125" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="挑战区">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.2901960784" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onTagIemCLick:" destination="-1" eventType="touchUpInside" id="DH1-k7-Nae"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lQh-I5-f2Q" firstAttribute="width" secondItem="RrA-30-iCA" secondAttribute="width" multiplier="0.333" id="2BX-zx-2tm"/>
+                <constraint firstAttribute="bottom" secondItem="lQh-I5-f2Q" secondAttribute="bottom" id="7sf-HD-F6X"/>
+                <constraint firstItem="Whe-m2-z6k" firstAttribute="leading" secondItem="vZi-CG-Thd" secondAttribute="trailing" id="8tu-b6-ylq"/>
+                <constraint firstItem="Whe-m2-z6k" firstAttribute="width" secondItem="RrA-30-iCA" secondAttribute="width" multiplier="0.333" id="BIY-Gd-gpe"/>
+                <constraint firstItem="Whe-m2-z6k" firstAttribute="top" secondItem="RrA-30-iCA" secondAttribute="top" id="CO3-nA-R20"/>
+                <constraint firstItem="vZi-CG-Thd" firstAttribute="top" secondItem="RrA-30-iCA" secondAttribute="top" id="GRB-L1-vic"/>
+                <constraint firstAttribute="bottom" secondItem="vZi-CG-Thd" secondAttribute="bottom" id="IlM-Be-NCi"/>
+                <constraint firstItem="vZi-CG-Thd" firstAttribute="leading" secondItem="lQh-I5-f2Q" secondAttribute="trailing" id="Q8d-hP-yRp"/>
+                <constraint firstAttribute="trailing" secondItem="Whe-m2-z6k" secondAttribute="trailing" id="QVf-r3-HYE"/>
+                <constraint firstAttribute="bottom" secondItem="Whe-m2-z6k" secondAttribute="bottom" id="aaM-ZQ-WoX"/>
+                <constraint firstItem="lQh-I5-f2Q" firstAttribute="top" secondItem="RrA-30-iCA" secondAttribute="top" id="gSd-fP-9U9"/>
+                <constraint firstItem="lQh-I5-f2Q" firstAttribute="width" secondItem="RrA-30-iCA" secondAttribute="width" multiplier="0.33" id="tbG-MP-4pL"/>
+                <constraint firstItem="lQh-I5-f2Q" firstAttribute="leading" secondItem="RrA-30-iCA" secondAttribute="leading" id="wVI-Cy-zfp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="tbG-MP-4pL"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="jsBtn" destination="Whe-m2-z6k" id="ht4-mi-Tg4"/>
+                <outlet property="rzBtn" destination="lQh-I5-f2Q" id="dQl-Eg-nWE"/>
+                <outlet property="tzBtn" destination="vZi-CG-Thd" id="sk3-MG-htm"/>
+            </connections>
+        </view>
+    </objects>
+</document>
